@@ -1,0 +1,11 @@
+[
+    {
+        "name": "unlockEverything",
+        "patches": [
+            {
+                "offset": "0x1145",
+                "code": "mov w0,1\nret"
+            }
+        ]
+    }
+]

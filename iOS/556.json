@@ -1,0 +1,11 @@
+[
+    {
+        "name": "bydDiffUnlock",
+        "patches": [
+            {
+                "offset": "0x10086",
+                "code": "cmp w8, 1145"
+            }
+        ]
+    }
+]
