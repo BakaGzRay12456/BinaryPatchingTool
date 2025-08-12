@@ -192,7 +192,7 @@ if __name__ == "__main__":
     '''
     Usage:
     1.Copy a ribbon IDA code into the ida_code string
-    2. Make a special map to the address of the external function (for example: B at 1005C55D8, jumps to another code area, you need a special map, because you don't know whether 616 will insert new things in the middle, and you can't rely on this to calculate the offset)
+    2. Make a special map to the address of the external function (for example: B at 1005C55D8, jumps to another code area, you need a special map, because you don't know whether the coder will insert new things in the middle, and you can't rely on this to calculate the offset)
     3, write old_base and new_base (old base address and new base address, old is filled with the start address of this function, new is the new start address, and then it will calculate the offset for you, calculate the jump address inside "but you have to separate map outside")
     4. Check the code after the output to see if there are any problems, focusing on the jump
     5. You have to replace the strings manually, not automatically, because you don't know if a new string will be inserted
